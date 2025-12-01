@@ -1,0 +1,19 @@
+<svg viewBox="0 0 74.8943 74.8943" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="74.894287" height="74.894287" fill="none" customFrame="#000000">
+	<mask id="mask_1" width="74.894310" height="74.894310" x="0.000000" y="0.000000" maskUnits="userSpaceOnUse">
+		<g filter="url(#pixso_custom_mask_type_alpha)">
+			<rect id="Plus Math" width="74.894310" height="74.894310" x="0.000000" y="0.000000" fill="url(#pattern_3)" />
+		</g>
+	</mask>
+	<defs>
+		<image id="image_3" width="90.000000" height="90.000000" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFoAAABaCAYAAAA4qEECAAAABHNCSVQICAgIfAhkiAAAAhxJREFUeJzt201qU1EYh/FHHVSbVAWXYK07cht+gDhwJLgP6UAX4lDFiVqtDXULKajQgdZBbsGPpDnXJP9ze/P84J2UQ3jvQ0hTOAVJkiRJ6+AKcLn2En11HXgKfAFOmhkBT4BrFffqldv8GfjvGQE71bbriSFwwOzIp7MPDCrt2AuPmB/5dB5W2rEX3lIe+k2lHXvhG+Whv1basciF2gvMcdLyfGef52LtBdaFoUMMHWLoEEOHGDrE0CGGDjF0iKFDDB1i6BBDhxg6xNAhhg4xdIihQwwdYugQQ4cYOsTQIW1DD4AHTG4FHVF+ueV/p61V7zNunv0+K7zrtwPsBR7mvMwHYHuholMMMfK02afwfvalkkNMbnXeKTy7Tm4wuR/4clkvOKL+u6erc1ASsORS4AbwHb+hzPIT2ASOzzpkvJCS0MfA4aoXOccOmfNuhvJ39O5iu/Tas2W+2JDJ98bav3i6Np+Aqwt0nWobY/8+74CbCxU9wyZwD3jN5M/R2g+bnjHwCrjbtCjW2f/5aJy0PN/Z5/HrXYihQwwdYugQQ4cYOsTQIYYOMXSIoUMMHWLoEEOHGDrE0CGGDjF0iKFDDB1i6BBDhxg6xNAhXQ991OLseGVbLEHXQ49anC26EF5L10O/aHH2+cq2WAMDyi5WvqflXTj96xbwkdmR91jhrc51swU8ZvI5/KOZz83Ptiru1WsbzUiSJEnquV8jgi+1dChQ2AAAAABJRU5ErkJggg==" />
+		<pattern id="pattern_3" width="1.000000" height="1.000000" image-fill-type="fit" patternContentUnits="objectBoundingBox">
+			<use transform="matrix(0.0111111,0,0,0.0111111,0,0)" xlink:href="#image_3" />
+		</pattern>
+		<filter id="pixso_custom_mask_type_alpha">
+			<feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1 0 " />
+		</filter>
+	</defs>
+	<g id="Mask group" mask="url(#mask_1)">
+		<rect id="Plus Math" width="74.894310" height="74.894310" x="0.000000" y="0.000000" fill="rgb(255,255,255)" />
+	</g>
+</svg>

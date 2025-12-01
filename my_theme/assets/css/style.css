@@ -1,0 +1,873 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+.section {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    color: white;
+    overflow: hidden;
+    /* для наглядности */
+}
+
+.main {
+    background-color: rgba(26, 9, 48, 1);
+    padding-bottom: 123px;
+}
+
+.business {
+    background: linear-gradient(180deg, #1A0930 0%, #511C96 100%);
+}
+
+.solution{
+    background: linear-gradient(180.00deg, rgba(81.25, 28.125, 150, 1),rgba(26, 9, 48, 1) 100%);
+    padding-bottom: 127px;
+}
+
+.expecting{
+    background: linear-gradient(180.00deg, rgba(26, 9, 48, 1),rgba(81.25, 28.125, 150, 1) 100%);
+    padding-bottom: 116px;
+}
+
+.cases{
+    background: linear-gradient(180deg, #511C96 0%, #1A0930 100%);
+    padding-bottom: 92px;
+}
+
+#cell {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    z-index: 3;
+}
+
+.eclipse {
+    filter: blur(100px);
+    background: #621078;
+    width: 500px;
+    height: 500px;
+    position: relative;
+    top: 134px;
+    left: 290px;
+    right: 900px;
+    bottom: 470px;
+}
+
+#front-fon {
+    position: absolute;
+    top: 69px;
+    width: 100%;
+    height: 750px;
+    background-image: linear-gradient(135.00deg, rgba(54, 23, 80, 1), rgba(48, 15, 76, 1) 100%);
+}
+
+.header {
+    width: 100%;
+    height: 69px;
+    background: RGB(34, 10, 55);
+    z-index: 10;
+    position: absolute;
+}
+
+.header__inner {
+    position: absolute;
+    left: 160px;
+    top: 23px;
+    right: 160px;
+    display: flex;
+    align-content: flex-start;
+    justify-content: space-between;
+}
+
+.header-logo {
+    color: white;
+    font-family: Unbounded, sans-serif;
+    font-size: 30px;
+    line-height: 23px;
+}
+
+.nav {
+    font-family: Nunito Sans, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    width: 479px;
+    height: 24px;
+    bottom: 37px;
+    display: flex;
+    margin: auto;
+    gap: 40px;
+}
+
+.nav__link {
+    display: inline-block;
+    vertical-align: top;
+    color: white;
+    text-decoration: none;
+    transition: color .2s linear;
+}
+
+.nav__link:hover {
+    color: #ff91fb;
+}
+
+.arrow {
+    position: relative;
+    left: 8px;
+}
+
+.phone__number {
+    font-family: Nunito Sans, sans-serif;
+    font-size: 20px;
+    color: white;
+    right: 135px;
+    position: relative;
+}
+
+.icon-app {
+    position: relative;
+    float: right;
+    top: 14px;
+    right: 183px;
+}
+
+.stats-frame {
+    position: absolute; /* оставляем, как ты хотел */
+    width: 1531px;
+    height: 245px;
+    margin: 0 auto; /* центрирует блок */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 38px;
+    z-index: 10;
+    left: 159px;
+    right: 233px;
+    top: 737px;
+}
+
+
+.card {
+    width: 485px;
+    height: 245px;
+    background: #fff;
+    border-radius: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    transition: all 1.2s ease;
+}
+
+
+.card.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+.percent {
+    font-family: "Unbounded", sans-serif;
+    font-size: 48px;
+    font-weight: 500;
+    color: #1a0930;
+    margin-bottom: 20px;
+}
+
+.card p {
+    color: rgba(26, 9, 48, 1);
+    font-family: Nunito Sans, sans-serif;
+    font-size: 24px;
+    font-weight: 200;
+}
+
+h2 {
+    position: relative;
+    z-index: 2;
+    margin: 20px 0;
+}
+
+.text-square {
+    width: 1215px;
+    height: 438px;
+    z-index: 12;
+    position: absolute;
+    top: 139px;
+    left: 160px;
+    bottom: 527px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 32px;
+}
+
+.text1 {
+    color: rgba(255, 255, 255, 1);
+    font-family: Unbounded, sans-serif;
+    font-size: 45px;
+    font-weight: 500;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.text-area1 {
+    width: 100%;
+    height: 256px;
+    z-index: 5;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+.text2 {
+    color: rgba(255, 255, 255, 1);
+    font-family: Nunito Sans, sans-serif;
+    font-size: 18px;
+    font-weight: 200;
+    text-align: left;
+}
+
+.button {
+    width: 240px;
+    height: 60px;
+    font-family: Nunito Sans, sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: white;
+    text-transform: uppercase;
+    border-radius: 8px;
+    background: linear-gradient(45.00deg, rgba(96, 37, 191, 1), rgba(142, 37, 191, 1) 100%);
+    border: none;
+    transition: all 0.3s ease;
+}
+
+.button:hover {
+    transform: scale(1.08); /* немного увеличиваем */
+    box-shadow: 0 0 20px rgba(106, 17, 203, 0.6); /* мягкое свечение */
+}
+
+.chart-frame {
+    width: 1789px;
+    height: 636px;
+    position: absolute;
+    top: 183px;
+    z-index: 4;
+    left: 60px;
+    display: flex;
+    align-items: flex-end;
+    gap: 20px;
+    background: transparent;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.bar {
+    width: 58px;
+    border-radius: 4px 4px 0 0;
+    border: 1px solid #6025BF;
+    border-bottom: 0;
+    background: linear-gradient(180.00deg, rgba(76.275390625, 29.234466552734375, 152.01922607421875, 1), rgba(44, 13, 102, 1) 39%, rgba(21, 3, 48, 1) 80%, rgba(26, 9, 48, 1) 100%);
+    transform-origin: bottom;
+    transform: scaleY(0);
+    transition: transform 1s ease;
+}
+
+.bars-container {
+    position: absolute;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+}
+
+.title_base {
+    position: absolute;
+    top: 100px;
+    left: 160px;
+    color: rgba(255, 255, 255, 1);
+    font-family: Unbounded, sans-serif;
+    font-size: 45px;
+    font-weight: 400;
+    text-align: left; /* убираем все внешние отступы */
+}
+
+.title_alt{
+    left: 69px
+}
+
+/* Контейнер с блоками */
+.frame {
+    position: absolute;
+    top: 198px;
+    left: 155px;
+    width: 1609px;
+    height: 809px;
+    display: grid;
+    grid-template-columns: repeat(3, 511px);
+    grid-template-rows: repeat(2, 389px);
+    column-gap: 38px;
+    row-gap: 31px;
+    background: transparent;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Каждый блок */
+.box {
+    position: relative;
+    width: 511px;
+    height: 389px;
+    border: 1px solid rgba(255, 255, 255, 1);
+    border-radius: 50px;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+/* Каждая вторая карточка — фиолетовая */
+.box:nth-child(even) {
+    background: #7C55AE;
+    border: transparent;
+}
+
+/* Заголовок */
+.title2 {
+    font-family: Unbounded, sans-serif;
+    font-size: 32px;
+    font-weight: 500;
+    text-align: left;
+    margin: 45px 45px 0 29px;
+    color: white;
+}
+
+/* Подзаголовок */
+.text {
+    /* CRM, сайт и реклама не связаны */
+    width: 309px;
+    height: 93px;
+    font-family: Unbounded, sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    color: white;
+    text-align: left;
+    position: absolute;
+    bottom: 75px;
+    left: 29px;
+    right: 234px;
+}
+
+/* Иконка в правом нижнем углу */
+.icon {
+    position: absolute;
+    width: 273px;
+    height: 303px;
+    object-fit: contain;
+    pointer-events: none;
+}
+
+.box:nth-child(1) .icon {
+    right: -60px;
+    bottom: -55px;
+}
+
+.box:nth-child(3) .icon {
+    right: -45px;
+    bottom: -55px;
+}
+
+.box:nth-child(5) .icon {
+    right: -35px;
+    bottom: -50px;
+}
+
+.pain-block {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 674px;
+    height: 283px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Unbounded", sans-serif;
+    z-index: 100; /* чтобы блок был поверх */
+}
+
+/* Фон блока */
+.pain-block .bg {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 603px;
+    height: 198px;
+    object-fit: cover;
+    z-index: 1;
+}
+
+/* Текст по центру */
+.pain-block .text {
+    /* Мы понимаем эти боли и каждый день решаем их для бизнеса наших клиентов */
+    width: 595px;
+    height: 127px;
+    position: absolute;
+    bottom: 39px;
+    left: 0;
+    text-align: center;
+    color: rgba(69, 37, 110, 1);
+    z-index: 10;
+    font-family: Unbounded, sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 150%;
+}
+
+/* Стрелка */
+.pain-block .arrow {
+    position: absolute;
+    bottom: 125px;
+    left: 515px;
+    width: 135px;
+    height: 135px;
+    transform: rotate(360deg); /* можешь заменить на rotate(-45deg), если нужно направление вниз-влево */
+    z-index: 3;
+}
+
+.icon__rotated {
+    transform: rotate(5.36deg);
+    position: absolute;
+    top: 20px;
+    right: 0;
+}
+
+.container {
+    position: absolute;
+    border: 1px solid rgba(255, 255, 255, 1);
+    border-radius: 50px;
+}
+
+.container-1 {
+    width: 866px;
+    height: 421px;
+    top: 190px;
+    left: 68px;
+}
+
+.block {
+    position: relative; /* важно — не absolute, чтобы смещался в потоке */
+    width: 100%;
+    height: 100%;
+    border: 1px solid rgba(255, 255, 255, 1);
+    border-radius: 50px;
+    transition: transform 0.6s ease; /* плавное движение */
+}
+
+.container:hover .block {
+    transform: translateY(69px);
+}
+
+.block .text {
+    width: 806px;
+    height: 118px;
+    font-size: 40px;
+    top: -22px;
+}
+
+.cross {
+    width: 75px;
+    height: 75px;
+    position: absolute;
+    top: 25px;
+    right: 30px;
+}
+
+.subtext {
+    width: 750px;
+    height: 255px;
+    color: rgba(255, 255, 255, 1);
+    font-family: Montserrat, sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 150%;
+    position: relative;
+    text-align: left;
+    left: 35px;
+    top: 98px;
+    right: 67px;
+}
+
+.container-4 {
+    width: 880px;
+    height: 455px;
+    top: 565px;
+    right: 70px;
+}
+
+.container-2 {
+    width: 880px;
+    height: 278px;
+    top: 190px;
+    right: 69px;
+}
+
+.container-3 {
+    width: 866px;
+    height: 302px;
+    bottom: 128px;
+    left: 68px;
+}
+
+.container-2 .subtext,
+.container-3 .subtext,
+.container-2 .text,
+.container-3 .text {
+    color: black;
+}
+
+.container-2 .block,
+.container-3 .block {
+    background-color: white;
+}
+
+:root {
+    --speed: 20s; /* скорость движения */
+    --gap: 33px; /* расстояние между карточками */
+    --item-width: 325px; /* ширина карточки */
+    --item-height: 184px; /* высота карточки */
+}
+
+.wrap {
+    width: 100%;
+    overflow: hidden;
+    position: absolute;
+    top: 190px;
+}
+
+.carousel {
+    display: flex;
+    width: max-content;
+    gap: var(--gap);
+}
+
+.group {
+    display: flex;
+    gap: var(--gap);
+    will-change: transform;
+    animation: scrolling var(--speed) linear infinite;
+}
+
+.item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: var(--item-width);
+    flex-shrink: 0;
+}
+
+.item span {
+    margin-bottom: 45px;
+    font-size: 32px;
+    font-weight: 500;
+    text-align: center;
+    font-family: Unbounded, sans-serif;
+    color: #fff; /* ✅ фиксированный цвет — не зависит от фона */
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+}
+
+.item .card {
+    position: relative;
+    width: var(--item-width);
+    height: var(--item-height);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: transparent; /* ✅ фон карточки прозрачный */
+    bottom: 30px;
+}
+
+.card img.arrow {
+    position: absolute;
+    top: -40px;
+    left: -80px;/* стрелка всегда видима */
+}
+
+.item .card p {
+    font-family: Montserrat, sans-serif;
+    width: 275px;
+    height: 62px;
+    position: absolute;
+    font-size: 24px;
+    font-weight: 500;
+    color: #fff; /* ✅ контрастный текст */
+    line-height: 100%;
+    text-align: left;
+}
+
+@keyframes scrolling {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(-100% - var(--gap)));
+    }
+}
+
+.wrap:hover .carousel .group {
+    animation-play-state: paused;
+}
+
+.application {
+    width: 1055px;
+    height: 239px;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 40px;
+    border-radius: 20px;
+    padding: 60px;
+    position: absolute;
+    top: 616px;
+    left: 75px;
+}
+
+.text1-alt {
+    color: black;
+    font-size: 24px;
+    width: 508px;
+    height: 87px;
+}
+
+.text2-alt {
+    color: black;
+    position: relative;
+    top: 20px;
+}
+
+.promotion {
+    width: 508px;
+    height: 260px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 12px;
+    position: relative;
+    top: 0;
+}
+
+input {
+    width: 186px;
+    height: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px 30px 20px 30px;
+    border-radius: 8px;
+    background: rgba(242, 237, 248, 1);
+    font-family: Nunito Sans, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: left;
+    border: none;
+    outline: none;
+}
+
+.empty_block {
+    width: 508px;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+.input_icon {
+    position: relative;
+}
+
+.icon-btn {
+    position: absolute;
+    top: 50%;
+    right: 30px;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+.input_icon img {
+    width: 30px;
+    height: 30px;
+}
+
+.empty_block_alt {
+    width: 508px;
+    height: 24px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.checkbox {
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+    color: rgba(138, 120, 161, 1);
+    font-family: Nunito Sans, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 19px;
+    gap: 6px;
+}
+
+/* скрываем стандартный чекбокс */
+.checkbox input {
+    display: none;
+}
+
+/* визуальный квадрат */
+.checkmark {
+    width: 20px;
+    height: 20px;
+    border: 2px solid #888;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+}
+
+/* по умолчанию — галочка скрыта */
+.checkmark img {
+    display: none;
+    width: 130%;
+    height: 130%;
+}
+
+
+.checkbox input:checked + .checkmark img {
+    display: block;
+}
+
+.button_shadow {
+    position: relative;
+    width: 508px;
+    height: 100px; /* немного выше, чтобы вместить тень */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Кнопка */
+.button_alt {
+    position: relative;
+    z-index: 2;
+    width: 508px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 8px;
+}
+
+/* Тень */
+.shadow {
+    position: absolute;
+    bottom: -10px;
+    width: 468px;
+    height: 40px;
+    border-radius: 10px;
+    filter: blur(20px);
+    background: rgba(26, 9, 48, 0.5);
+    z-index: 1;
+}
+
+.input_icon {
+    position: relative;
+    display: inline-block;
+    width: 246px;
+    height: 60px;
+    box-sizing: border-box; /* чтобы padding входил в размер */
+}
+
+.input_icon input {
+    display: none;
+}
+
+.input_icon label {
+    padding: 20px 20px 20px 30px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* уменьшаем, чтобы поместилось */
+    background: rgba(242, 237, 248, 1);
+    color: rgba(138, 120, 161, 1);
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: Nunito Sans, sans-serif;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.input_icon label img {
+    width: 30px;
+    height: 30px;
+    margin-left: auto;
+    transition: transform 0.3s;
+}
+
+#drop:checked + label img {
+    transform: rotate(180deg);
+}
+
+.input_icon ul {
+    display: none;
+    position: absolute;
+    top: 65px;
+    left: 0;
+    width: 100%;
+    background: rgba(242, 237, 248, 1);
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    border-radius: 10px;
+    z-index: 1000;
+}
+
+.input_icon ul li {
+    padding: 10px 20px;
+    color: rgba(138, 120, 161, 1);
+    font-family: Nunito Sans, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 120%;
+    text-align: left;
+    cursor: pointer;
+}
+
+.input_icon ul li:hover {
+    background: #ff91fb;
+}
+
+#drop:checked ~ ul {
+    display: block;
+}
+
